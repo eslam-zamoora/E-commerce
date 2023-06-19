@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,500;0,600;0,700;0,800;1,200&display=swap');
+
+:root{
+  --font-family : 'Montserrat Alternates', sans-serif ;
+  --main-color : #0aad0a;
+  --light-color :#f0f3f2;
+  --shadow : rgba(145,158,171,.2)0px 2px 4px -1px , rgba(145,158,171,.14)0px 1px 10px 0px ;
+  --raiting-color : #ffc908 ;
+}
+.box-shadow{
+  box-shadow: var(--shadow);
+}
+
+body{
+  font-family: var(--font-family) !important;
+}
+
+ul{
+  list-style: none;
+}
+
+.raiting-color{
+  color: var(--raiting-color);
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+a ,a:hover{
+  color: black;
+  text-decoration: none;
+}
+
+.product:hover{
+  box-shadow: var(--shadow);
+  border: solid 1px var(--main-color);
+}
+
+
+.product .btn{
+  transition: transform 1s , opacity 1s;
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.product:hover .btn {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+
+.font-sm{
+  font-size: 14px;
+}
+
+.text-main{
+  color: var(--main-color);
+}
+
+.bg-main{
+  background-color: var(--main-color) !important;
+}
+
+.bg-main-light{
+  background-color: var(--light-color);
+}
+
+.outer-main{
+  border: 1px solid var(--main-color);
+  transition: all 0.3s !important;
+}
+.outer-main:hover{
+  background-color: var(--main-color);
+  color: white;
+}
+
+.cart{
+  padding: 5px;
+  transition: all 0.3s !important;
+}
+
+.cart:hover{
+  border: 1px solid var(--main-color);
+
+}
+
+
+
+/* loading page */
+
+.loadingPage{
+  position: relative;
+  height: 90vh;
+}
+.lds-circle {
+  display: inline-block;
+  transform: translateZ(1px);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.lds-circle > div {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  background: black;
+  animation: lds-circle 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+@keyframes lds-circle {
+  0%, 100% {
+    animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+  }
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(1800deg);
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  100% {
+    transform: rotateY(3600deg);
+  }
+}
+
+
+.network{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  /* transform: translate(-50% , -50%); */
+  z-index: 300;
+}
+
+
+.navbar{
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+::selection{
+  color: white;
+  background-color: black ;
+}
+
+.footer{
+  background-color: gray;
+}
+
+.footer i{
+  transition: all 0.3s;
+}
+
+.footer i:hover{
+  color: white;
+}
