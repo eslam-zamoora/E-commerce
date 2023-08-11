@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import styles from './Categoryslider.module.css';
 import Slider from 'react-slick';
 import axios from 'axios';
-
-
+ 
 export default function Categoryslider() {
 
 
@@ -16,7 +14,7 @@ export default function Categoryslider() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1
   };
 

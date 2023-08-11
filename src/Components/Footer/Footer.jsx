@@ -4,7 +4,7 @@ import React from 'react'
 export default function Footer() {
   return (
     <>
-   <footer className="text-center text-white footer" >
+   <footer className="text-center text-white footer mt-5" >
 
   <div className="container pt-4">
    
